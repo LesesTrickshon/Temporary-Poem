@@ -1,0 +1,32 @@
+:root{
+    --site-opacity: 0.25;
+}
+
+body{
+    opacity: var(--site-opacity);
+    background-image: url(/file/bg.jpg);
+    background-size: contain;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.main {
+    width: 50%;
+    padding: 20px;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 20px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: background-color 1s, color 1s, filter 2s;
+
+}
+.main:hover{
+    background-color: #191919;
+    color: aliceblue;
+    filter: drop-shadow(0 0 20px rgba(200,200,200,0.25));
+}
